@@ -9,7 +9,7 @@ const users = mongoose.Schema({
     telp:String,
     email:String,
     role:{ type:String, enum:['1','2','3']},
-    create_at: {type:Date, default:Date.now}
+    createAt: {type:Date, default:Date.now}
 })
 
 users.index({telp:1},{unique:true})

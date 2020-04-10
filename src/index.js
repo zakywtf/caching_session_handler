@@ -1,11 +1,12 @@
 import xpress from 'express'
 import dotenv from 'dotenv'
-import users from './controller/usersCtrl'
-import login from './controller/login'
 import { connectDb } from './config/db';
 import bodyParser from 'body-parser'
 import validateToken from './lib/validateToken';
 import moment from 'moment';
+
+import users from './controller/usersCtrl'
+import login from './controller/login'
 
 let app = xpress()
 dotenv.config()
